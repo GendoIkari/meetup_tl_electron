@@ -1,0 +1,17 @@
+@use 'reset';
+
+
+.PageMain {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 10px;
+
+    >h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        align-self: center;
+    }
+}
