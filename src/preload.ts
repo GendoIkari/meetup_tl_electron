@@ -3,6 +3,8 @@
 
 import { contextBridge, ipcRenderer } from "electron"
 
-contextBridge.exposeInMainWorld('appApi', {
+const appApi: AppApi = {
     sendClick: () => ipcRenderer.send('button-clicked')
-})
+}
+
+contextBridge.exposeInMainWorld('appApi', appApi)
